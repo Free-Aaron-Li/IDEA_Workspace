@@ -31,10 +31,19 @@ public class Test35_ValueTransferTest {
         System.out.println("o1.orderId=" + o1.orderId + ",o2.orderId=" + o2.orderId);
         o2.orderId = 1002;
         System.out.println("o1.orderId=" + o1.orderId + ",o2.orderId=" + o2.orderId);
-
+        System.out.println("******************参数传递机制*******************");
+        int x = 10;
+        int y = 20;
+        System.out.println("x = " + x + ", y = " + y);
+        //交换两个变量的值操作；
+        int temp = x;
+        x = y;
+        y = temp;
+        System.out.println("x = " + x + ", y = " + y);
     }
 }
 
 class Order {
     int orderId;
 }
+
