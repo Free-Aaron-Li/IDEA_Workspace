@@ -1,0 +1,16 @@
+@startuml
+skinparam responseMessageBelowArrow true
+title Example
+header 1
+footer page %page% of %lastpage%
+actor L as "Alice" #99FF99
+participant Jhon #34FF23
+autonumber 1 13 "[000]"
+L --[#blue]> "Bob" : Hello
+autonumber resume
+Bob-->"L":good
+newpage A
+autonumber 3 5 "<font color=blue>Message 0 "
+L-->"Jhon":good morning
+L -->"L":told me
+@enduml

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Actualcombat_Project/Actualcombat_Project.iml" filepath="$PROJECT_DIR$/Actualcombat_Project/Actualcombat_Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actualcombat_Project/Family_Account.iml" filepath="$PROJECT_DIR$/Actualcombat_Project/Family_Account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IDEA_Workspace.iml" filepath="$PROJECT_DIR$/IDEA_Workspace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tool/Tool.iml" filepath="$PROJECT_DIR$/Tool/Tool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Txet/Txet.iml" filepath="$PROJECT_DIR$/Txet/Txet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project_test_01/project_test_01.iml" filepath="$PROJECT_DIR$/project_test_01/project_test_01.iml" />
+    </modules>
+  </component>
+</project>

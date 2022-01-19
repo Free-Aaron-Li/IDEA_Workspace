@@ -1,0 +1,21 @@
+public class PersonDao{}
+public class IDCard{}
+public class Person{}
+public class Department{}
+
+//依赖者
+public class PersonServiceBean {
+    //成员属性的方式
+    private PersonDao personDao;
+    //参数类型的方式
+    public void save(Person person) {
+    }
+    //返回类型的方式
+    public IDCard getIDCard(Integer personid) {
+        return null;
+    }
+    //局部变量的方式
+    public void modify() {
+        Department department = new Department();
+    }
+}
