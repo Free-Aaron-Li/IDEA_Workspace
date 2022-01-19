@@ -125,27 +125,21 @@ public class ArrayUtil {
      */
     public double[] reverse(double[] arr) {
         for (int i = 0; i < arr.length / 2; i++) {
-            double temp = arr[i];
-            arr[i] = arr[arr.length - i - 1];
-            arr[arr.length - i - 1] = temp;
+            swap(arr, i, arr.length - i - 1);
         }
         return arr;
     }
 
     public int[] reverse(int[] arr) {
         for (int i = 0; i < arr.length / 2; i++) {
-            int temp = arr[i];
-            arr[i] = arr[arr.length - i - 1];
-            arr[arr.length - i - 1] = temp;
+            swap(arr, i, arr.length - i - 1);
         }
         return arr;
     }
 
     public float[] reverse(float[] arr) {
         for (int i = 0; i < arr.length / 2; i++) {
-            float temp = arr[i];
-            arr[i] = arr[arr.length - i - 1];
-            arr[arr.length - i - 1] = temp;
+            swap(arr, i, arr.length - i - 1);
         }
         return arr;
     }
@@ -185,9 +179,7 @@ public class ArrayUtil {
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < arr.length - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
-                    temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
+                    swap(arr, j, j + 1);
                 }
             }
         }
@@ -198,9 +190,7 @@ public class ArrayUtil {
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < arr.length - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
-                    temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
+                    swap(arr, j, j + 1);
                 }
             }
         }
@@ -211,9 +201,7 @@ public class ArrayUtil {
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < arr.length - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
-                    temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
+                    swap(arr, j, j + 1);
                 }
             }
         }
@@ -269,4 +257,28 @@ public class ArrayUtil {
         }
         return -1;//返回一个复数，表示没有找到值；
     }
+
+    /**
+     * 元素互换之数组交换
+     */
+    public void swap(double[] arr, int i, int j) {
+        double temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
+    public void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
+    public void swap(float[] arr, int i, int j) {
+        float temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+    /**
+     * 元素互换之元素交换
+     */
 }
