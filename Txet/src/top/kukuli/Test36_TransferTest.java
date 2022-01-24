@@ -8,34 +8,7 @@ package top.kukuli;
  */
 
 /**
- * 关于方法的参数传递的一些例题；
- * <p>
- * 例题一：值传递考察；
- * <p>
- * 例题一：值传递考察；
- * <p>
- * 例题一：值传递考察；
- * <p>
- * 例题一：值传递考察；
- * <p>
- * 例题一：值传递考察；
- * <p>
- * 例题一：值传递考察；
- * <p>
- * 例题一：值传递考察；
- * <p>
- * 例题一：值传递考察；
- * <p>
- * 例题一：值传递考察；
- * <p>
- * 例题一：值传递考察；
- * <p>
- * 例题一：值传递考察；
- * <p>
- * 例题一：值传递考察；
- * <p>
- * 例题一：值传递考察；
- * <p>
+ * 关于方法的参数传递的一些例题
  * 例题一：值传递考察；
  * <p>
  * 例题一：值传递考察；
@@ -90,7 +63,7 @@ class Value1 {
  */
 public class Test36_TransferTest {
     public static void main(String[] args) {
-        System.out.println("Radius             " + "Area");
+        System.out.println("Radius\t\tArea");
         PassObject test = new PassObject();
         Circle a = new Circle();
         test.printAreas(a, 5);
@@ -120,9 +93,9 @@ class PassObject {
         Circle p = new Circle();
         for (double i = 1; i <= time; i++) {
             c.radius = i;
-            System.out.println(i + "                  " + p.findArea(c.radius));
+            System.out.println(i + "\t\t\t" + p.findArea(c.radius));
         }
         System.out.println();
-        System.out.println("now radius is:" + time);
+        System.out.println("now radius is:" + (time + 1));
     }
 }
