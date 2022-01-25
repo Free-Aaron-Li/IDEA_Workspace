@@ -14,4 +14,35 @@ package top.kukuli;
  * 变成了无穷递归，类似死循环；
  */
 public class Test37_RecursionTest {
+    public static void main(String[] args) {
+        Test37_RecursionTest test = new Test37_RecursionTest();
+        System.out.println(test.getSum(100));
+        System.out.println(test.f(10));
+    }
+
+    /**
+     * 例一：计算1~100之间所有自然数的和；
+     */
+    public int getSum(int n) {
+        if (n == 1) {
+            return 1;
+        } else {
+            return n + getSum(n - 1);
+        }
+    }
+
+    /**
+     * 例四：已知有一个数列，f(0)=1,f(1)=4,f(n+2)=2*f(n+1)+f(n);
+     * 其中n是大于0的整数，求f(10)的值；
+     */
+    public int f(int n) {
+        if (n == 0) {
+            return 1;
+        } else if (n == 1) {
+            return 4;
+        } else {
+            return f(n - 1) * 2 + f(n - 2);
+        }
+    }
+    
 }
