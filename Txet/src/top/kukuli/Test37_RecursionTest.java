@@ -34,6 +34,7 @@ public class Test37_RecursionTest {
         //调用汉诺塔
         hannoi(n, A, B, C);
         s.close();
+        String str = "abc";
     }
 
     /**
@@ -73,22 +74,15 @@ public class Test37_RecursionTest {
             return f1(n - 1) + f1(n - 2);
         }
     }
-    
+
     /**
      * 例四：汉诺塔问题
      */
-    /**
-     * 盘子移动
-     */
-    public static void move(int disk, char M, char N) {
-        System.out.println("盘子" + disk + "  " + M + "------->" + N);
-    }
-
-
     public static void hannoi(int n, char A, char B, char C) {
         if (n == 1) {
             move(n, A, C);
         } else {
+
             //移动上一关的步骤移动到B
             hannoi(n - 1, A, C, B);
             //把最大的盘子移动C塔
@@ -97,5 +91,16 @@ public class Test37_RecursionTest {
             hannoi(n - 1, B, A, C);
         }
     }
+
+    /**
+     * 盘子移动
+     */
+    public static void move(int disk, char M, char N) {
+        System.out.println("盘子" + disk + "  " + M + "------->" + N);
+    }
+
 }
+
+
+
 
