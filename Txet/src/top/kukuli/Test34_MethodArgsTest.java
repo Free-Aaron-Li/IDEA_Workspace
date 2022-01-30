@@ -20,8 +20,11 @@ package top.kukuli;
  * 2.3 可变个数形参的方法与本类中方法名相同，形参不同的方法之间构成重载；
  * 2.4 可变个数形参的方法与本类中方法名相同，形参类型也相同的数组之间不构成重载（二者之间不共存）；
  * 2.5 可变个数形参在方法的形参中，必须声明在末尾；
+ * public void show(String... strs),也就是你不能这样声明：show(string...strs,int i)
  * 2.6 优先执行确定形参的方法，没有再执行可变个数形参方法；
+ * 也就是这样： * public void show(int i,String... strs),优先执行int i，再执行string...strs;
  * 2.7 可变个数形参在方法的形参中，最多只能声明一个可变形参。
+ * 也就是不能这样声明： public void show(String... strs,int...i)
  */
 public class Test34_MethodArgsTest {
     public static void main(String[] args) {

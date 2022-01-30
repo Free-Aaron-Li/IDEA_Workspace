@@ -22,6 +22,7 @@ public class Test30_StudentTest {
     public static void main(String[] args) {
         //声明一个student类型数组（在这里我用的是Test30来表示这个student类）
         Test30[] student = new Test30[20];
+
         //给元素赋值
         for (int i = 0; i < student.length; i++) {
             student[i] = new Test30();
