@@ -1,5 +1,4 @@
 package top.kukuli;
-
 /*
  * @author: Aaron.Li
  * @data: 2022 - 02 - 02 - 下午1:13
@@ -17,5 +16,6 @@ public class Test39_PersonTest {
         Test39_Person test = new Test39_Person();
         test.setAge(12);
         System.out.println("年龄为："+test.getAge());
+
     }
 }

@@ -23,8 +23,7 @@ public class Test39_Person {
 /*    public int dogAge(int a){
         if(a<0||a>130){
             throw new RuntimeException("传入数据非法！");//报错
-            //System.out.println("传入数据非法");
-        }else{
+            //System.out.println("传入数据非法");        }else{
             age=a;
         }
         return age;
