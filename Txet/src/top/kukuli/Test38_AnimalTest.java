@@ -63,7 +63,7 @@ class Animal {
 
     /**
      * 对属性的获取
-     *
+     * @
      * @return
      */
     public int getLegs() {
