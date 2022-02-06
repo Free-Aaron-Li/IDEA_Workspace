@@ -16,7 +16,6 @@ public class Test39_PersonTest {
     public static void main(String[] args) {
         Test39_Person test = new Test39_Person();
         test.setAge(12);
-        System.out.println("年龄为："+test.getAge());
-
+        System.out.println("年龄为：" + test.getAge());
     }
 }
