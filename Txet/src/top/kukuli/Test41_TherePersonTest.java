@@ -2,6 +2,7 @@ package top.kukuli;
 
 /*
  * @author: Aaron.Li
+<<<<<<< HEAD
  * @date: 2022 - 02 - 07 - 下午8:34
  * @project: IDEA_Workspace
  * @version: JDK17.0.2
@@ -23,16 +24,16 @@ package top.kukuli;
  2.1 在类的方法中，我们可以使用“this.属性”或“this.方法”的方法，调用当前对象属性或方法。但是，通常情况下，我们都选择省略“this.”。特殊情况下，如果方法的形参和属性
  同名时，我们必须显式的使用“this.”的方式，表明此变量是属性，而非形参。
 */
-public class Test41_PersonTest {
+public class Test41_TherePersonTest {
     public static void main(String[] args) {
-        Person test = new Person();
+        TherePerson test = new TherePerson();
         test.setAge(1);
         System.out.println(test.getAge());
         test.eat();
     }
 }
 
-class Person {
+class TherePerson {
     private String name;
     private int age;
 

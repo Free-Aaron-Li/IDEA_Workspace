@@ -1,7 +1,5 @@
 package top.kukuli;
 
-import com.kukuli.test.Customer;
-
 import java.util.Arrays;
 
 /**
