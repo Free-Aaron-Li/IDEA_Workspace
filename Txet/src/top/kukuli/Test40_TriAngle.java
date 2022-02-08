@@ -21,9 +21,9 @@ public class Test40_TriAngle {
      * @param a
      * @param b
      */
-    public Test40_TriAngle(double a,double b){
-        base=a;
-        height=b;
+    public Test40_TriAngle(double base,double height){
+        this.base=base;
+        this.height=height;
     }
     public void setBase(double b){
         base=b;
